@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.menu {
+  display: none;
+}
+
 h1 {
   background-image: url('https://res.cloudinary.com/ditkcrwd0/image/upload/v1710157318/project-landing/fondo_proyecto_id3crv.png');
   background-repeat: repeat;
@@ -277,4 +281,65 @@ p {
   display: flex;
   justify-content: center;
   position: sticky;
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 30px;
+    height: 5pc;
+  }
+  ol {
+    display: none;
+  }
+  article {
+    font-size: 18px;
+  }
+  .menu {
+    display: block;
+    margin-left: 125px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  a {
+    font-size: 15px;
+  }
+  img {
+    width: 90px;
+    height: 100px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 152px;
+    gap: 20px;
+  }
+  button {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .third-line {
+    display: flex;
+    justify-content: center;
+  }
+  .second-line {
+    display: flex;
+    justify-content: center;
+  }
+  .first-line {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  aside {
+    font-size: 15px;
+    width: 50%;
+    margin-left: 80px;
+  }
+  p {
+    font-size: 10px;
+  }
 }
