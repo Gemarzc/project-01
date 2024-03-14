@@ -24,6 +24,7 @@ h1 {
 a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 ol {
@@ -35,6 +36,8 @@ ol {
   list-style-type: none;
   color: black;
   font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  font-weight: bold;
 }
 
 input {
@@ -266,6 +269,8 @@ aside {
   padding-left: 10px;
 }
 
+/* El aside va a tener colores que parpadeen para llamar más la atención */
+
 article {
   display: flex;
   justify-content: center;
@@ -341,5 +346,40 @@ p {
   }
   p {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 375px) {
+  h1 {
+    font-size: 30px;
+    height: 8pc;
+  }
+  ol {
+    display: none;
+  }
+  .menu {
+    display: block;
+    margin-left: 32%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 375px) {
+  .first-line {
+    display: flex;
+    justify-content: center;
+  }
+  .second-line {
+    display: flex;
+    justify-content: center;
+  }
+  .third-line {
+    display: flex;
+    justify-content: center;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 152px;
+    gap: 20px;
   }
 }
