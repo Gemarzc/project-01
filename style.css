@@ -42,6 +42,25 @@ ol {
 
 input {
   height: 25px;
+  color: purple;
+}
+
+input:hover {
+  background-color: rgb(183, 115, 247);
+  color: black;
+}
+
+.search {
+  height: 30px;
+  width: 80px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  background-color: rgb(183, 115, 247);
+  border-radius: 5px;
+  border: solid rgb(183, 115, 247);
+  cursor: pointer;
 }
 
 ul {
@@ -244,7 +263,7 @@ img {
   height: 200px;
 }
 
-button {
+.products {
   cursor: pointer;
   padding: 10px 20px;
   margin: 10px;
@@ -301,7 +320,7 @@ p {
   }
   .menu {
     display: block;
-    margin-left: 110px;
+    margin-left: 36%;
   }
 }
 
@@ -359,7 +378,7 @@ p {
   }
   .menu {
     display: block;
-    margin-left: 32%;
+    margin-left: 36%;
   }
 }
 
