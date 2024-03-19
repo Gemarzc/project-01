@@ -382,7 +382,7 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 375px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 30px;
     height: 8pc;
@@ -396,23 +396,19 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 375px) {
-  .first-line {
+@media screen and (max-width: 768px) {
+  section {
     display: flex;
-    justify-content: center;
   }
-  .second-line {
-    display: flex;
-    justify-content: center;
+  section a {
+    font-size: 20px;
   }
   .third-line {
-    display: flex;
     justify-content: center;
   }
   ul {
     display: flex;
     flex-direction: column;
-    width: 152px;
     gap: 20px;
   }
 }
