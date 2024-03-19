@@ -419,8 +419,7 @@ p {
 @media screen and (max-width: 768px) {
   aside {
     font-size: 18px;
-    display: flex;
-    justify-content: center;
+    width: 50%;
   }
   article {
     font-size: 20px;
