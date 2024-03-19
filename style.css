@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 .menu {
-  display: none;
+  width: 130px;
+  height: 130px;
+  cursor: pointer;
+}
+
+div a {
+  padding: 0;
 }
 
 h1 {
@@ -296,6 +306,7 @@ article {
   margin-top: 40px;
   font-size: 30px;
   font-family: 'Courier New';
+  font-weight: bold;
   padding: 10px;
 }
 
@@ -319,7 +330,6 @@ p {
     font-size: 18px;
   }
   .menu {
-    display: block;
     margin-left: 36%;
   }
 }
