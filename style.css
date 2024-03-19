@@ -388,11 +388,11 @@ p {
     height: 8pc;
   }
   ol {
-    display: none;
+    display: flex;
+    justify-content: space-between;
   }
-  .menu {
-    display: block;
-    margin-left: 36%;
+  ol a {
+    padding-left: 25px;
   }
 }
 
