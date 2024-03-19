@@ -411,4 +411,10 @@ p {
     flex-direction: column;
     gap: 20px;
   }
+  label {
+    display: none;
+  }
+  aside {
+    font-size: 20px;
+  }
 }
