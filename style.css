@@ -414,7 +414,15 @@ p {
   label {
     display: none;
   }
+}
+
+@media screen and (max-width: 768px) {
   aside {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+  }
+  article {
     font-size: 20px;
   }
 }
