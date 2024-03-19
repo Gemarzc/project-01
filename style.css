@@ -329,9 +329,6 @@ p {
   article {
     font-size: 18px;
   }
-  .menu {
-    margin-left: 36%;
-  }
 }
 
 @media screen and (max-width: 375px) {
