@@ -304,8 +304,6 @@ aside {
   padding-left: 10px;
 }
 
-/* El aside va a tener colores que parpadeen para llamar más la atención */
-
 article {
   display: flex;
   justify-content: center;
