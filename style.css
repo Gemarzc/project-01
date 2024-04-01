@@ -78,6 +78,7 @@ ul {
   flex-direction: row;
   list-style-type: none;
   justify-content: space-evenly;
+  margin-left: 60%;
 }
 
 li {
@@ -87,9 +88,7 @@ li {
 
 .first-line {
   width: 210px;
-  margin: 200px auto;
-  padding: 10px 0px;
-  gap: 20px;
+  padding-top: 6%;
 }
 
 #clothes {
@@ -128,11 +127,11 @@ li {
 
 .second-line {
   width: 210px;
-  margin: 200px auto;
-  padding: 10px 0px;
+  padding-top: 7%;
 }
 
 #chess-history {
+  object-fit: cover;
   border-radius: 10px;
   gap: 20px;
   box-shadow: 0px 6px 23px -15px rgba(0, 0, 0, 0.75);
@@ -144,6 +143,7 @@ li {
   gap: 20px;
   box-shadow: 0px 6px 23px -15px rgba(0, 0, 0, 0.75);
   transition: transform 0.5s;
+  object-fit: cover;
 }
 
 #sheets {
@@ -169,8 +169,7 @@ li {
 
 .third-line {
   width: 210px;
-  margin: 200px auto;
-  padding: 10px 0px;
+  padding-top: 7%;
 }
 
 #wood-pieces {
@@ -206,6 +205,7 @@ li {
   gap: 20px;
   box-shadow: 0px 6px 23px -15px rgba(0, 0, 0, 0.75);
   transition: transform 0.5s;
+  object-fit: cover;
 }
 
 a {
@@ -361,17 +361,9 @@ p {
     height: 30px;
     font-size: 10px;
   }
+
   .third-line {
-    display: flex;
-    justify-content: center;
-  }
-  .second-line {
-    display: flex;
-    justify-content: center;
-  }
-  .first-line {
-    display: flex;
-    justify-content: center;
+    margin-left: 5%;
   }
 }
 
