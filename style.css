@@ -352,6 +352,7 @@ p {
   }
   ul {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     width: 152px;
     gap: 20px;
@@ -394,6 +395,7 @@ p {
 
   ul {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
   }
