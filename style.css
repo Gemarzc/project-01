@@ -361,10 +361,6 @@ p {
     height: 30px;
     font-size: 10px;
   }
-
-  .third-line {
-    margin-left: 5%;
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -392,20 +388,16 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  section {
-    display: flex;
-  }
   section a {
     font-size: 20px;
   }
-  .third-line {
-    justify-content: center;
-  }
+
   ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
   label {
     display: none;
   }
