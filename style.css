@@ -20,6 +20,7 @@ div a {
 
 h1 {
   background-image: url('https://res.cloudinary.com/ditkcrwd0/image/upload/v1710157318/project-landing/fondo_proyecto_id3crv.png');
+  object-fit: contain;
   background-repeat: repeat;
   background-size: 50% 100%;
   width: 100%;
@@ -78,7 +79,7 @@ ul {
   flex-direction: row;
   list-style-type: none;
   justify-content: space-evenly;
-  margin-left: 60%;
+  padding-left: 60%;
 }
 
 li {
