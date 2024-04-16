@@ -338,6 +338,9 @@ p {
   label {
     display: none;
   }
+  .search {
+    display: none;
+  }
   article {
     font-size: 18px;
   }
@@ -353,7 +356,7 @@ p {
   }
   ul {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 152px;
     gap: 20px;
@@ -394,10 +397,14 @@ p {
     font-size: 20px;
   }
 
-  ul {
+  section {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
     gap: 20px;
   }
 
