@@ -353,10 +353,6 @@ p {
     width: 90px;
     height: 100px;
   }
-  section {
-    display: flex;
-    justify-content: center;
-  }
 
   ul {
     display: flex;
