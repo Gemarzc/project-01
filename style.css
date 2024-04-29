@@ -352,6 +352,11 @@ p {
     height: 100px;
   }
 
+  li a {
+    text-align: center;
+    font-size: 10px;
+  }
+
   #clothes {
     display: flex;
     flex-wrap: wrap;
