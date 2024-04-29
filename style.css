@@ -78,16 +78,14 @@ ul {
   flex-direction: row;
   list-style-type: none;
   justify-content: space-evenly;
-  padding-left: 60%;
 }
 
 li {
-  margin-left: 10%;
   margin-right: 12px;
 }
 
 .first-line {
-  width: 210px;
+  width: 100%;
   padding-top: 6%;
 }
 
@@ -126,7 +124,7 @@ li {
 }
 
 .second-line {
-  width: 210px;
+  width: 100%;
   padding-top: 7%;
 }
 
@@ -168,7 +166,7 @@ li {
 }
 
 .third-line {
-  width: 210px;
+  width: 100%;
   padding-top: 7%;
 }
 
