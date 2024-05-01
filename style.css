@@ -521,11 +521,27 @@ p {
   }
 
   #clock {
-    width: 45%;
+    width: 40%;
+  }
+
+  #chessboard {
+    width: 40%;
+  }
+
+  #electronic-board {
+    width: 60%;
+  }
+
+  #chess-set {
+    width: 62%;
   }
 
   ul > li > a {
     font-size: 20px;
+  }
+
+  ul > li > div > button {
+    font-size: 15px;
   }
 }
 
