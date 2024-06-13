@@ -306,7 +306,7 @@ img {
   font-size: 30px;
   color: black;
   border-radius: 5px;
-  border: solid rgb(56, 225, 231) 5px;
+  border: solid red 5px;
   display: flex;
   justify-content: start;
   width: 25%;

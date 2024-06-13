@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var cuadro = document.getElementById('azul')
+  var azul = document.getElementById('azul')
   var color1 = 'red'
-  var color2 = 'blue'
+  var color2 = ' rgb(56, 225, 231)'
   var currentColor = color1
 
   setInterval(function () {
