@@ -286,7 +286,23 @@ img {
   background-color: rgb(183, 115, 247);
 }
 
-aside {
+#azul {
+  font-size: 30px;
+  color: black;
+  border-radius: 5px;
+  border: solid rgb(56, 225, 231) 5px;
+  display: flex;
+  justify-content: start;
+  width: 25%;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  margin-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+#red {
   font-size: 30px;
   color: black;
   border-radius: 5px;
