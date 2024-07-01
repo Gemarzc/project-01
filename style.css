@@ -206,6 +206,10 @@ li {
   object-fit: cover;
 }
 
+span {
+  color: rgb(202, 202, 11);
+}
+
 a {
   font-size: 20px;
   display: flex;
