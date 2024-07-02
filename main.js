@@ -1,4 +1,4 @@
-const zapatillas = [
+const productos = [
   {
     id: 1,
     nombre: 'Camiseta Negra',
@@ -114,7 +114,7 @@ const zapatillas = [
 ]
 
 const printZapas = (zapas) => {
-  const divZapas = document.querySelector('#zapatillas')
+  const divZapas = document.querySelector('#productos')
   divZapas.innerHTML = ''
 
   for (const zapa of zapas) {
@@ -149,7 +149,7 @@ const printZapas = (zapas) => {
     divZapas.appendChild(divZapa)
   }
 }
-printZapas(zapatillas)
+printZapas(productos)
 
 document.addEventListener('DOMContentLoaded', function () {
   var azul = document.getElementById('azul')
