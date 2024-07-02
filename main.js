@@ -117,8 +117,8 @@ const printProducts = (products) => {
   const divProducts = document.querySelector('#productos')
   divProducts.innerHTML = ''
 
-  for (const zapa of products) {
-    const divZapa = document.createElement('div')
+  for (const product of products) {
+    const divProduct = document.createElement('div')
     const divImg = document.createElement('div')
     const img = document.createElement('img')
     const nombre = document.createElement('h3')
@@ -128,25 +128,25 @@ const printProducts = (products) => {
     for (let i = 1; i <= 5; i++) {
       const estrella = document.createElement('div')
       estrella.className = 'estrella'
-      if (zapa.estrellas >= i) {
+      if (product.estrellas >= i) {
         estrella.classList.add('rellena')
       }
       divEstrellas.appendChild(estrella)
     }
 
-    divZapa.className = 'flex-container'
+    divProduct.className = 'flex-container'
     divEstrellas.classList.add('estrellas')
     divEstrellas.classList.add('flex-container')
-    img.src = zapa.img
-    nombre.textContent = zapa.nombre
-    precio.textContent = zapa.precio
+    img.src = product.img
+    nombre.textContent = product.nombre
+    precio.textContent = product.precio
 
-    divZapa.appendChild(divImg)
+    divProduct.appendChild(divImg)
     divImg.appendChild(img)
-    divZapa.appendChild(nombre)
-    divZapa.appendChild(precio)
-    divZapa.appendChild(divEstrellas)
-    divProducts.appendChild(divZapa)
+    divProduct.appendChild(nombre)
+    divProduct.appendChild(precio)
+    divProduct.appendChild(divEstrellas)
+    divProducts.appendChild(divProduct)
   }
 }
 printProducts(productos)
