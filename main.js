@@ -113,11 +113,11 @@ const productos = [
   }
 ]
 
-const printZapas = (zapas) => {
-  const divZapas = document.querySelector('#productos')
-  divZapas.innerHTML = ''
+const printProducts = (products) => {
+  const divProducts = document.querySelector('#productos')
+  divProducts.innerHTML = ''
 
-  for (const zapa of zapas) {
+  for (const zapa of products) {
     const divZapa = document.createElement('div')
     const divImg = document.createElement('div')
     const img = document.createElement('img')
@@ -146,10 +146,10 @@ const printZapas = (zapas) => {
     divZapa.appendChild(nombre)
     divZapa.appendChild(precio)
     divZapa.appendChild(divEstrellas)
-    divZapas.appendChild(divZapa)
+    divProducts.appendChild(divZapa)
   }
 }
-printZapas(productos)
+printProducts(productos)
 
 document.addEventListener('DOMContentLoaded', function () {
   var azul = document.getElementById('azul')
