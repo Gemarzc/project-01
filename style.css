@@ -6,6 +6,7 @@
 
 body {
   background-color: whitesmoke;
+  min-height: 100svh;
 }
 
 .menu {
@@ -206,8 +207,46 @@ li {
   object-fit: cover;
 }
 
-span {
-  color: rgb(202, 202, 11);
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#zapatillas > div {
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 6px 23px -15px rgba(0, 0, 0, 0.75);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.estrellas {
+  gap: 10px;
+}
+
+.estrella {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.rellena {
+  background-color: yellow;
 }
 
 a {
@@ -216,11 +255,7 @@ a {
   justify-content: center;
 }
 
-#clothes:hover {
-  transform: scale(1.1);
-}
-
-#decoration-painting:hover {
+#zapatillas > div:hover {
   transform: scale(1.1);
 }
 
