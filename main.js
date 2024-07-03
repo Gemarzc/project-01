@@ -5,7 +5,8 @@ const productos = [
     precio: 12,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153890/project-landing/shopping_u0outn.webp',
     estrellas: 4,
-    colores: ['Negro']
+    colores: ['Negro'],
+    modelo: ['Camiseta']
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ const productos = [
     precio: 35,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710154053/project-landing/caballo-ajedrez-negro-01-600x600_rryyy5.jpg',
     estrellas: 5,
-    colores: ['Negro', 'Blanco']
+    colores: ['Negro', 'Blanco'],
+    modelo: ['Cuadro']
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ const productos = [
     precio: 20,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153970/project-landing/il_794xN.5587074338_hmwr_txl8tv.webp',
     estrellas: 3,
-    colores: ['Negro', 'Blanco', 'Amarillo']
+    colores: ['Negro', 'Blanco', 'Amarillo'],
+    modelo: ['Piezas Decoración']
   },
   {
     id: 4,
@@ -29,7 +32,8 @@ const productos = [
     precio: 10,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153779/project-landing/VI2-00206-00025_92433_blanco-negro_wwfok7.jpg',
     estrellas: 4,
-    colores: ['Blanco']
+    colores: ['Blanco'],
+    modelo: ['Taza']
   },
   {
     id: 5,
@@ -37,21 +41,24 @@ const productos = [
     precio: 15,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153688/project-landing/il_794xN.5841412913_c2d9_uaprka.avif',
     estrellas: 5,
-    colores: ['Blanco']
+    colores: ['Blanco'],
+    modelo: ['Termo']
   },
   {
     id: 6,
     nombre: 'Libro Historia del Ajedrez',
     precio: 18,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153223/project-landing/md31281392157_ljmbxx.jpg',
-    estrellas: 5
+    estrellas: 5,
+    modelo: ['Libro Historia']
   },
   {
     id: 7,
     nombre: 'Manual Iniciación',
     precio: 10,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153348/project-landing/903984-360x480_n1sqlf.jpg',
-    estrellas: 5
+    estrellas: 5,
+    modelo: ['Manual']
   },
   {
     id: 8,
@@ -59,7 +66,8 @@ const productos = [
     precio: 8,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153619/project-landing/shopping_zqq8uw.webp',
     estrellas: 3,
-    colores: ['Azul']
+    colores: ['Azul'],
+    modelo: ['Planillas']
   },
   {
     id: 9,
@@ -67,51 +75,86 @@ const productos = [
     precio: 22,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153043/project-landing/511ipNsPQ9L._AC_SL1000__imqzv9.jpg',
     estrellas: 4,
-    colores: ['Marrón']
+    colores: ['Marrón'],
+    modelo: ['Reloj']
   },
   {
     id: 10,
     nombre: 'Tablero Ajedrez',
     precio: 30,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710152944/project-landing/s-l500_sxlgfq.jpg',
-    estrellas: 4
+    estrellas: 4,
+    modelo: ['Tablero']
   },
   {
     id: 11,
     nombre: 'Piezas de Madera',
     precio: 15,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710152698/project-landing/shopping_vvj4ha.webp',
-    estrellas: 3
+    estrellas: 3,
+    modelo: ['Piezas Madera']
   },
   {
     id: 12,
     nombre: 'Piezas de Cristal',
     precio: 20,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710154139/project-landing/shopping_mbgmke.webp',
-    estrellas: 4
+    estrellas: 4,
+    modelo: ['Piezas Cristal']
   },
   {
     id: 13,
     nombre: 'Tablero Plegable',
     precio: 30,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710154522/project-landing/juego-ajedrez-plegable-de-madera-yo-juegoo_1_stvkbx.jpg',
-    estrellas: 4
+    estrellas: 4,
+    modelo: ['Tablero Plegable']
   },
   {
     id: 14,
     nombre: 'Tablero Electrónico',
     precio: 50,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153096/project-landing/4032153008103_1_tqgprk.jpg',
-    estrellas: 4
+    estrellas: 4,
+    modelo: ['Tablero Electrónico']
   },
   {
     id: 15,
     nombre: 'Set de Ajedrez',
     precio: 40,
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153004/project-landing/81chsyBTjIL._AC_SL1500__gsrsoy.jpg',
-    estrellas: 4
+    estrellas: 4,
+    modelo: ['Set Ajedrez']
   }
 ]
+
+const MODELOS = []
+
+const fillModelos = (products) => {
+  MODELOS.splice(0)
+  for (const product of products) {
+    if (!MODELOS.includes(product.modelo)) {
+      MODELOS.push(product.modelo)
+    }
+  }
+}
+
+fillModelos(productos)
+
+const createSelectModel = () => {
+  const divFiltros = document.querySelector('#filtros')
+  const selectModel = document.createElement('select')
+
+  for (const modelo of MODELOS) {
+    const option = document.createElement('option')
+
+    option.value = modelo
+    option.textContent = modelo
+
+    selectModel.appendChild(option)
+  }
+  divFiltros.appendChild(selectModel)
+}
 
 const printProducts = (products) => {
   const divProducts = document.querySelector('#productos')
@@ -139,7 +182,7 @@ const printProducts = (products) => {
     divEstrellas.classList.add('flex-container')
     img.src = product.img
     nombre.textContent = product.nombre
-    precio.textContent = product.precio
+    precio.textContent = `${product.precio} €`
 
     divProduct.appendChild(divImg)
     divImg.appendChild(img)
@@ -150,6 +193,7 @@ const printProducts = (products) => {
   }
 }
 printProducts(productos)
+createSelectModel()
 
 document.addEventListener('DOMContentLoaded', function () {
   var azul = document.getElementById('azul')
